@@ -1,0 +1,61 @@
+#root { min-height: 100vh; }
+
+.page { min-height: 100vh; background: #f7f8fa; }
+.auth-page { min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #f7f8fa; }
+.auth-card { width: min(100%, 420px); padding: 36px; border: 1px solid #e8eaf0; border-radius: 18px; background: white; box-shadow: 0 16px 48px #18243a0b; }
+.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 13px; background: #5a62d6; color: white; font-size: 21px; font-weight: 700; margin-bottom: 25px; }
+.auth-card h1, .intro h1 { color: #20243b; font-size: 30px; letter-spacing: -1px; }
+.muted { color: #82889b; font-size: 14px; line-height: 1.6; margin-top: 6px; }
+.auth-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; margin: 28px 0 22px; border-radius: 10px; background: #f3f4f8; }
+.auth-tabs button { border: 0; border-radius: 7px; padding: 10px; background: transparent; color: #777d8e; cursor: pointer; }
+.auth-tabs button.active { color: #303554; background: white; box-shadow: 0 1px 4px #171b2a12; }
+.form-stack, .note-form { display: grid; gap: 17px; }
+label { display: grid; gap: 8px; color: #454a60; font-size: 13px; font-weight: 600; }
+input, textarea, select { width: 100%; border: 1px solid #e1e4eb; border-radius: 8px; padding: 11px 12px; outline: none; color: #282c40; background: white; font: inherit; font-size: 14px; }
+input:focus, textarea:focus, select:focus { border-color: #7379df; box-shadow: 0 0 0 3px #7379df1c; }
+textarea { resize: vertical; line-height: 1.55; }
+.primary-button { border: 0; border-radius: 8px; padding: 11px 17px; background: #5a62d6; color: white; font-size: 14px; font-weight: 600; cursor: pointer; transition: background .15s ease; }
+.primary-button:hover { background: #484fc0; }
+.primary-button:disabled { opacity: .65; cursor: wait; }
+.auth-card .primary-button { width: 100%; margin-top: 3px; }
+.error { color: #c33f50; font-size: 13px; line-height: 1.5; }
+.topbar { height: 70px; display: flex; align-items: center; justify-content: space-between; padding: 0 max(24px, calc((100vw - 1040px) / 2)); border-bottom: 1px solid #eaecf1; background: #fff; }
+.wordmark { color: #303554; font-size: 17px; font-weight: 700; letter-spacing: -.5px; text-decoration: none; }
+.account { display: flex; align-items: center; gap: 18px; color: #555b70; font-size: 13px; }
+.quiet-button, .delete-button { border: 0; padding: 7px 10px; border-radius: 7px; background: transparent; color: #60667d; font: inherit; font-size: 13px; cursor: pointer; }
+.quiet-button:hover { background: #f1f2f8; color: #454bbb; }
+.delete-button { color: #be5662; }
+.delete-button:hover { background: #fff1f1; }
+.content { width: min(100% - 40px, 940px); margin: 0 auto; padding: 49px 0 80px; }
+.eyebrow { margin-bottom: 8px; color: #8389a1; font-size: 10px; font-weight: 700; letter-spacing: 1.5px; }
+.intro { margin-bottom: 26px; }
+.editor-card { padding: 23px 25px 25px; border: 1px solid #e8eaf0; border-radius: 13px; background: white; box-shadow: 0 5px 20px #18243a05; }
+.editor-card h2, .notes-heading h2 { margin-bottom: 18px; color: #30344a; font-size: 16px; }
+.note-form { grid-template-columns: 1fr 190px; gap: 15px 18px; }
+.full-width { grid-column: 1 / -1; }
+.form-actions { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.notes-heading { display: flex; align-items: center; gap: 10px; margin: 34px 0 14px; }
+.notes-heading h2 { margin: 0; }
+.notes-heading > span { min-width: 22px; padding: 2px 7px; border-radius: 20px; background: #eceeff; color: #5a62c7; text-align: center; font-size: 11px; }
+.notes-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.note-card { min-width: 0; padding: 19px 20px 13px; border: 1px solid #e8eaf0; border-radius: 12px; background: white; }
+.note-card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.status-pill { padding: 4px 8px; border-radius: 20px; background: #f0f0ff; color: #656bd0; font-size: 11px; }
+.note-date { color: #a0a4b1; font-size: 11px; }
+.note-card h3 { margin: 14px 0 7px; color: #292d42; font-size: 16px; }
+.note-body { min-height: 42px; color: #686e80; font-size: 13px; line-height: 1.65; white-space: pre-wrap; overflow-wrap: anywhere; }
+.note-actions { display: flex; justify-content: flex-end; gap: 5px; margin: 12px -8px -5px; padding-top: 9px; border-top: 1px solid #f0f1f4; }
+.empty-state { padding: 52px 20px; border: 1px dashed #dfe2ea; border-radius: 12px; text-align: center; background: #fff; }
+.empty-state > div { margin-bottom: 11px; color: #777de0; font-size: 24px; }
+.empty-state h3 { color: #373c54; font-size: 15px; }
+.empty-state .muted { margin-top: 4px; }
+@media (max-width: 620px) {
+  .auth-card { padding: 28px 23px; }
+  .topbar { height: 62px; }
+  .content { width: min(100% - 28px, 940px); padding-top: 35px; }
+  .editor-card { padding: 19px 16px; }
+  .note-form { grid-template-columns: 1fr; }
+  .full-width { grid-column: auto; }
+  .notes-grid { grid-template-columns: 1fr; }
+  .account { gap: 8px; }
+}
