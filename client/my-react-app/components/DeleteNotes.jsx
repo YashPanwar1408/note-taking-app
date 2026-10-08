@@ -22,7 +22,7 @@ const DeleteNotes = () => {
         setIsLoading(true);
         try {
             await axios.delete(
-                `https://notes-tracker.onrender.com/notes/${id}`);
+                `https://note-taking-app-hjb5.onrender.com/notes/${id}`);
             setIsLoading(false);
             navigate('/');
         } catch (error) {

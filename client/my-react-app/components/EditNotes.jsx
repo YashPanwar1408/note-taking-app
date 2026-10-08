@@ -24,7 +24,7 @@ const EditNotes = () => {
 
     const navigate = useNavigate();
     const { id } = useParams();
-    const URL = `https://notes-tracker.onrender.com/notes/${id}`;
+    const URL = `https://note-taking-app-hjb5.onrender.com/notes/${id}`;
     const data = { topic, status, notes };
 
     //Get book of specific Id

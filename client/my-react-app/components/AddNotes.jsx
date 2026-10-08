@@ -22,7 +22,7 @@ const AddNotes = () => {
   const data = { topic, status, notes };
   const handleSubmit = async () => {
     try {
-      await axios.post("https://notes-tracker.onrender.com/notes", data);
+      await axios.post("https://note-taking-app-hjb5.onrender.com/notes", data);
       setIsLoading(false);
       navigate("/");
     } catch (error) {

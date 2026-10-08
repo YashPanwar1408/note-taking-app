@@ -18,7 +18,7 @@ import {
 const NotesTable = () => {
     const [notes, setNotes] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    const URL = `https://notes-tracker.onrender.com/notes`;
+    const URL = `https://note-taking-app-hjb5.onrender.com/notes`;
 
     const fetchNotes = async () => {
         try {

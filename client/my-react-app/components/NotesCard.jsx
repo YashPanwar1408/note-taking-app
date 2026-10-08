@@ -32,7 +32,7 @@ const NotesCard = () => {
     const [notesModal, setNotesModal] = useState(false);
     const [datesModal, setDatesModal] = useState(false);
 
-    const API_URL = 'https://notes-tracker.onrender.com/notes';
+    const API_URL = 'https://note-taking-app-hjb5.onrender.com/notes';
 
     const getNotes = async () => {
         setIsLoading(true);
