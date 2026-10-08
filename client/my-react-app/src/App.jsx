@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import './App.css';
 
-const API_URL = import.meta.env.VITE_API_URL || 'https://note-taking-app-client-theta.vercel.app/';
+const API_URL = import.meta.env.VITE_API_URL || 'https://note-taking-app-hjb5.onrender.com';
 
 const request = async (path, { token, ...options } = {}) => {
   const response = await fetch(`${API_URL}${path}`, {
